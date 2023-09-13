@@ -8,7 +8,7 @@ const uint8_t relayDataCh1 = PC4;
 const uint8_t relayDataCh2 = PC5;
 const uint8_t btnPin = PC3;
 
-const uint16_t dataSwitchDelay = 2;
+const uint16_t dataSwitchDelay = 200;
 
 uint8_t currentChannel = 2;
 
@@ -35,7 +35,7 @@ void switchChannels()
   // power is the first to come and the last to leave
   digitalWrite(relayDataCh1, LOW);
   digitalWrite(relayDataCh2, LOW);
-  delay(100);
+  delay(dataSwitchDelay);
   
   if (currentChannel == 1) {
     currentChannel = 2;
