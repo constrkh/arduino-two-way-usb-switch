@@ -4,8 +4,8 @@
 
 
 const uint8_t relayVcc = PA2;
-const uint8_t relayDataCh1 = PC4;
-const uint8_t relayDataCh2 = PC5;
+const uint8_t relayDataCh1 = PC5;
+const uint8_t relayDataCh2 = PC4;
 const uint8_t btnPin = PC3;
 
 const uint16_t dataSwitchDelay = 200;
